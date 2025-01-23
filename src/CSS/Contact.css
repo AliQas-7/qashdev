@@ -1,0 +1,91 @@
+.contact {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: -5rem;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #bbb;
+}
+
+.form-input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.form-button {
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7f50, #ff4500);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .form-input {
+    font-size: 0.9rem;
+  }
+
+  .form-button {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,123 @@
+.projects {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #2575fc, #6a11cb);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: -6rem;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+.project-item {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+}
+
+.project-tech {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.project-tech-item {
+  background: linear-gradient(135deg, #ff7f50, #ff4500);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  text-transform: capitalize;
+  transition: background 0.3s ease;
+}
+
+.project-tech-item:hover {
+  background: linear-gradient(135deg, #ff4500, #ff7f50);
+}
+
+.project-link {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.project-link:hover {
+  background: linear-gradient(135deg, #ff4500, #ff7f50);
+  border-color: #fff;
+  color: #000;
+}
+
+.project-item:hover .project-link {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.project-item:hover .project-link:hover {
+  background: linear-gradient(135deg, #ff4500, #ff7f50);
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2.2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-item {
+    padding: 1.5rem;
+  }
+}

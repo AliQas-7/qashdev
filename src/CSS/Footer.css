@@ -1,0 +1,70 @@
+.footer {
+  padding: 1.5rem 1rem;
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Adjust spacing between icons */
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem; /* Set icon size */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: #ff7f50;
+  transform: scale(1.1);
+}
+
+.social-link:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-socials {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 0.75rem;
+  }
+
+  .social-link {
+    font-size: 0.8rem;
+  }
+}
