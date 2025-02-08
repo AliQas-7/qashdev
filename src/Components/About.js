@@ -84,7 +84,7 @@ class About extends React.Component {
                 "Passion, innovation, and problem-solving are the core of my journey."
               </p>
               <div className="resume-button-container">
-                <a href="https://drive.google.com/file/u/0/d/1Qie2TwETl2OvOfWXnx3gJP6SfjP_8QpH/view?usp=drive_link&pli=1" target="_blank" rel="noopener noreferrer" className="resume-button">
+                <a href="https://drive.google.com/file/d/1i9jcLGc6tWCwdIo2bfKh5mu7-4f59al-/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="resume-button">
                   Download Resume
                 </a>
               </div>
